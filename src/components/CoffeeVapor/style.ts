@@ -16,30 +16,39 @@ export const Cup = styled.div`
   border-bottom-left-radius: 40%;
   border-bottom-right-radius: 40%;
   background: linear-gradient(to right, #f9f9f9, #d9d9d9);
+`
 
-  &:before {
-    content: '';
-    position: absolute;
-    top: -15px;
-    left: 0;
+export const CupTop = styled.div`
+  position: absolute;
+  top: -15px;
+  left: 0;
 
-    width: 100%;
-    height: 30px;
-    border-radius: 50%;
-    background: linear-gradient(to right, #f9f9f9, #d9d9d9);
-  }
+  width: 100%;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #f9f9f9, #d9d9d9);
+`
 
-  &:after {
-    content: '';
-    position: absolute;
-    top: -15px;
-    left: 5px;
+export const CupInside = styled.div`
+  position: absolute;
+  top: 3px;
+  left: 5px;
 
-    width: calc(100% - 10px);
-    height: 30px;
-    border-radius: 50%;
-    background: linear-gradient(to left, #f9f9f9, #d9d9d9);
-  }
+  width: calc(100% - 10px);
+  height: 25px;
+  border-radius: 50%;
+  background: linear-gradient(to left, #f9f9f9, #d9d9d9);
+  overflow: hidden;
+`
+
+export const Coffee = styled.div`
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(to right, #c57265, #e28462);
 `
 
 export const CupHandle = styled.div`
