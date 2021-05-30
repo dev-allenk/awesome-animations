@@ -1,10 +1,11 @@
+import CoffeeVapor from '../../components/CoffeeVapor'
 import { Section, Container, Layout } from '../../Layout/Layout.common'
 
 export default function Home() {
   return (
     <Layout>
       <Section>
-        <Container>test1</Container>
+        <CoffeeVapor />
       </Section>
       <Section>
         <Container>test1</Container>
