@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Layout = styled.div`
   display: grid;
@@ -8,9 +8,20 @@ export const Layout = styled.div`
   @media only screen and (min-width: 700px) {
     grid-template-columns: 1fr 1fr;
   }
-`;
+`
 
-export const Container = styled.div`
+export const Section = styled.section`
+  position: relative;
+  width: 100%;
+  height: 100%;
   padding-top: calc(9 / 16 * 100%);
   border: 1px solid #ddd;
-`;
+`
+
+export const Container = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+`

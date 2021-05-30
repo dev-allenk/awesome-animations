@@ -1,11 +1,17 @@
-import { Container, Layout } from "../../Layout/Layout.common";
+import { Section, Container, Layout } from '../../Layout/Layout.common'
 
 export default function Home() {
   return (
     <Layout>
-      <Container>test1</Container>
-      <Container>test1</Container>
-      <Container>test1</Container>
+      <Section>
+        <Container>test1</Container>
+      </Section>
+      <Section>
+        <Container>test1</Container>
+      </Section>
+      <Section>
+        <Container>test1</Container>
+      </Section>
     </Layout>
-  );
+  )
 }
