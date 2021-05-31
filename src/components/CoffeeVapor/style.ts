@@ -9,6 +9,10 @@ export const Background = styled(Container)`
   background-color: #607d8b;
 `
 
+export const Content = styled.div`
+  position: relative;
+`
+
 export const Cup = styled.div`
   position: relative;
   width: 140px;
@@ -63,4 +67,38 @@ export const CupHandle = styled.div`
   border-radius: 50%;
 
   transform: rotate(40deg);
+`
+
+export const Plate = styled.div`
+  position: absolute;
+  top: 75px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 250px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #f9f9f9, #e7e7e7);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+
+  :before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    background: linear-gradient(to left, #f9f9f9, #e7e7e7);
+  }
+  :after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    background: radial-gradient(rgba(0, 0, 0, 0.2) 25%, transparent, transparent);
+  }
 `
